@@ -15,7 +15,6 @@ class Counter extends React.Component {
 
     componentDidMount() {
         axios.get('http://192.168.0.110:5000/tubes/12345')
-            .then(results => results.json())
             .then((results) => {
                 this.setState({
                     hasData: true,
