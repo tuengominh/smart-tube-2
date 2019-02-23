@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './Neopac_Logo.png';
 import './App.css';
 import Counter from "./Counter";
+import RealTime from "./RealTime";
 
 class App extends Component {
 
@@ -12,11 +13,13 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
 
             <div className="App">
-                <p>It's time!</p>
+                <h4>It's time to take your medicine!</h4>
             <div>
-                <Counter/>
+                <h3 class="important"><Counter/></h3>
             </div>
             </div>
+
+            <div><button className="button">Next</button></div>
 
         </header>
       </div>

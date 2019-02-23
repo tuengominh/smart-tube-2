@@ -18,8 +18,13 @@ class Counter extends React.Component {
     }
 
     render() {
-            let counter = this.state.data;
-            return("hasData : " + this.state.hasData //+ "You have " + (5-counter) + (counter === 1 ? " time left" : " times left")
+            let counter = this.state.data.length;
+            let condition = counter < 5;
+            return(
+                (condition
+                    ? ("You have used " + counter + (counter === 1 ? " dose" : " doses") + " today!")
+                    : ("You have exceeded the maximum usage! ")
+                )
         );
     }
 
@@ -29,7 +34,7 @@ class Counter extends React.Component {
             .then((results) => {
                 this.setState({
                     hasData: true,
-                    data: results,
+                    data: results.data,
                 }, () => {
                 });
             }).catch(err => {

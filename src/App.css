@@ -8,14 +8,14 @@
 }
 
 .App-header {
-  background-color: black;
+  background-color: #F2F1EC;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -59,4 +59,14 @@ h3{ font-size: 30px; }
 .table-white{
   background: #eee;
   color: black;
+}
+
+.button{
+  background-color: black;
+  font-size: 20px;
+  color: white;
+}
+
+.important{
+  color: #E95A29;
 }
