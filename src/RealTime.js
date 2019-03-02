@@ -1,6 +1,4 @@
 import React from 'react';
-import axios from 'axios';
-
 
 class RealTime extends React.Component {
 
@@ -17,6 +15,7 @@ class RealTime extends React.Component {
             1000
         );
     }
+
     componentWillUnmount() {
         clearInterval(this.intervalID);
     }
